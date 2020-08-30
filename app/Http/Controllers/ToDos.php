@@ -41,7 +41,7 @@ class ToDos extends Controller
         
         $newToDo=new ToDo;
         $newToDo->task=$request->input('todo');
-        $newToDo->completed=0;
+        $newToDo->completed=true;
         $newToDo->user_id=$user_id->id;
         $newToDo->userr_id=$user_id->id;
         $newToDo->save();
