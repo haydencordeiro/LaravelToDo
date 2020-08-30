@@ -15,7 +15,8 @@ class ToDos extends Controller
     {   $user_id=auth()->user();
         echo $user_id->id;
 //         $user=User::find($user_id);
-        $todoList=$user_id->toDo;
+        $todoList=$user_id->todo;
+     echo $todoList;
     return view('todo')->with('todos',$todoList);
     }
 
