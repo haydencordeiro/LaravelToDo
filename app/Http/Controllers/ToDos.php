@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\ToDo;
+use DB;
 class ToDos extends Controller
 {
     /**
@@ -12,11 +13,8 @@ class ToDos extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {   $user_id=auth()->user();
-        echo $user_id;
-//         $user=User::find($user_id);
-        $todoList=$user_id->todo;
-     echo $todoList;
+    {  
+        $todoList=DB::table('to_dos')->where('userr_id', auth()->id())->get();
     return view('todo')->with('todos',$todoList);
     }
 
