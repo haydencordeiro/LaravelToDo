@@ -18,7 +18,7 @@ class CreateToDosTable extends Migration
             $table->unsignedInteger('userr_id');
             $table->mediumText('task');
             $table->boolean('completed');
-            $table->boolean('user_id');
+            $table->unsignedInteger('user_id');
             $table->timestamps();
 
         });
