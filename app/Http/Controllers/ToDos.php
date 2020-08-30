@@ -41,7 +41,7 @@ class ToDos extends Controller
         
         $newToDo=new ToDo;
         $newToDo->task=$request->input('todo');
-        $newToDo->completed=false;
+        $newToDo->completed=0;
         $newToDo->user_id=$user_id->id;
         $newToDo->userr_id=$user_id->id;
         $newToDo->save();
@@ -82,11 +82,11 @@ class ToDos extends Controller
     public function update(Request $request, $id)
     {
         $todo = ToDo::findOrFail($id);
-        if ($todo->completed==true){
-            $todo->completed=false;
+        if ($todo->completed==1){
+            $todo->completed=0;
         }
         else{
-            $todo->completed=true;
+            $todo->completed=1;
 
         }
         $todo->update();
