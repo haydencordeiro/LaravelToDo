@@ -1,0 +1,198 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #57b0f5;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+nav h1 {
+    width: 80%;
+    /* text-align: center; */
+    padding-left: 1rem;
+}
+nav ul {
+    width: 20%;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+nav li {
+    font-size: x-large;
+    padding-left: 1rem;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+.Mcontainer {
+    background-color: #ebedf1;
+    margin: auto;
+    width: 85%;
+    height: 85%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemContainer {
+    margin-top: 1rem;
+    /* background-color: green; */
+    height: 65vh;
+
+    display: flex;
+    width: 90%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    overflow: scroll;
+    padding-bottom: 3rem;
+}
+.item {
+    margin-top: 0.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    min-height: 3rem;
+    border-radius: 1.2rem;
+    overflow: hidden;
+}
+.pop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightpink;
+    border-radius: 0rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    overflow: visible;
+    margin-top: 0rem;
+    width: 80%;
+    height: 3rem;
+}
+
+.deleteshow h3 {
+    display: block;
+    height: 2rem;
+    text-align: center;
+    margin-top: 0.8rem;
+}
+
+.deletehidden {
+    width: 0px;
+    display: none;
+}
+
+.deletehidden h3 {
+    display: none;
+}
+
+.notdone h3 {
+    font-size: x-large;
+    width: 70%;
+}
+
+.done h3 {
+    text-decoration: line-through;
+    font-size: x-large;
+    width: 70%;
+}
+.notdone .iconC {
+    width: 30%;
+    padding-top: 0.2rem;
+    text-align: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-color: 1px solid black;
+    box-shadow: 0rem 0rem 0rem 0.2rem rgba(0, 0, 0, 0.6);
+    background-color: white;
+    border-radius: 1rem;
+    text-decoration: none;
+}
+.done .iconC {
+    width: 30%;
+    color: white;
+    padding-top: 0.1rem;
+    text-align: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-color: 1px solid black;
+    box-shadow: 0rem 0rem 0rem 0.2rem rgba(0, 200, 0, 0.6);
+    background-color: #64dec3;
+    border-radius: 1rem;
+}
+.addbutton {
+    position: relative;
+    bottom: 3rem;
+    left: 43%;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 1.5rem;
+    background-color: #5ca8e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: 1px solid white;
+    /* box-shadow: 0rem 0rem 0rem 0.2rem rgba(0, 0, 0, 0.6); */
+}
+.addbutton a {
+    color: white;
+    font-size: x-large;
+}
+.title {
+    color: red;
+    color: black;
+    text-decoration: none;
+    border-style: none;
+}
+.inp.show {
+    position: absolute;
+    top: 7rem;
+    left: 2.3rem;
+    background-color: lightblue;
+    height: 10vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border-radius: 1.5rem;
+}
+.inp form {
+    padding-top: 1.8rem;
+}
+input {
+    border-radius: 1rem;
+    height: 1rem;
+}
+button {
+    color: white;
+    background-color: #5ca8e0;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.28rem;
+}
+.inp.hidden {
+    display: none;
+}
