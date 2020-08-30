@@ -13,7 +13,7 @@ class ToDos extends Controller
      */
     public function index()
     {   $user_id=auth()->user();
-        echo $user_id->id;
+//         echo $user_id->id;
         // $user=User::find($user_id);
         $todoList=$user_id->toDo;
     return view('todo')->with('todos',$todoList);
